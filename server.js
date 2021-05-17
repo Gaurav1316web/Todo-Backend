@@ -180,6 +180,6 @@ app.delete("/deleteTodo/:userId/:todoId", (req, res)=> {
 
 
 //run server
-app.listen(8081, () => {
+app.listen(process.env.PORT || 8081, () => {
   console.log("server started");
 });
